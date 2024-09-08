@@ -4,7 +4,7 @@ A terminal tool for calculating SDR (Signal-to-Distortion Ratio), designed to qu
 
 ## Introduction
 
-This tool provides a convenient way to assess the quality of audio separation models by calculating the SDR between reference and estimated audio files.
+This tool provides a convenient way to assess the quality of music separation models by calculating the SDR between reference and estimated audio files.
 
 ## Installation
 
@@ -32,7 +32,7 @@ python sdr.py [-h] [--reference_folder REFERENCE_FOLDER] [--estimated_folder EST
 ## Example
 
 ```bash
-python sdr.py --reference_folder ./ref_audio --estimated_folder ./est_audio --num_workers 4
+python sdr.py --reference_folder ./reference_audio --estimated_folder ./estimated_audio --num_workers 4
 ```
 
 ## License
