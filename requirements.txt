@@ -1,0 +1,8 @@
+numpy
+librosa
+argparse
+scipy
+mir_eval
+inquirer
+colorama
+tabulate
