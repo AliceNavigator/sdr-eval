@@ -6,3 +6,4 @@ mir_eval
 inquirer
 colorama
 tabulate
+gradio
