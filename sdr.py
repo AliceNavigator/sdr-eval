@@ -258,7 +258,7 @@ def explain_bss_eval_sources_requirements():
     print(f"{Fore.YELLOW}· 人声分离模型：{Style.RESET_ALL}参考音频应该是 没有伴奏的人声。")
     print(f"{Fore.YELLOW}· 和声分离模型：{Style.RESET_ALL}参考音频应该是 没有伴奏的主唱人声，不包含和声。")
     print(f"{Fore.YELLOW}· 混响分离模型：{Style.RESET_ALL}参考音频应该是 没有混响的干净人声。")
-    print(f"{Fore.YELLOW}· 降噪模型：{Style.RESET_ALL}    参考音频应该是 没有噪声的净的目标声音。")
+    print(f"{Fore.YELLOW}· 降噪模型：{Style.RESET_ALL}    参考音频应该是 没有噪声的干净的目标声音。")
     print(f"{Fore.CYAN}{'-' * 80}{Style.RESET_ALL}\n")
 
     print(f"{Style.BRIGHT}{Fore.GREEN}2. 什么是估计音频 (estimated_audio)?{Style.RESET_ALL}")
@@ -267,7 +267,7 @@ def explain_bss_eval_sources_requirements():
     print(f"{Fore.YELLOW}· 人声分离模型：{Style.RESET_ALL}通常输入模型的是 整首歌，取其分离结果。")
     print(f"{Fore.YELLOW}· 和声分离模型：{Style.RESET_ALL}通常输入模型的是 包含和声的人声，取其分离结果。")
     print(f"{Fore.YELLOW}· 混响分离模型：{Style.RESET_ALL}通常输入模型的是 带有混响的人声，取其分离结果。")
-    print(f"{Fore.YELLOW}· 降噪模型：{Style.RESET_ALL}    通常输入模型的是 带有噪音的目标声音，取其分离结果。")
+    print(f"{Fore.YELLOW}· 降噪模型：{Style.RESET_ALL}    通常输入模型的是 带有噪声的目标声音，取其分离结果。")
     print(f"{Fore.CYAN}{'-' * 80}{Style.RESET_ALL}\n")
 
     print(f"{Style.BRIGHT}{Fore.GREEN}3. 其他重要提示{Style.RESET_ALL}")
