@@ -45,11 +45,11 @@ def print_bss_eval_descriptions():
     <h3>各参数含义</h3>
     <ol>
     <li><strong>SDR (Source-to-Distortion Ratio) - 信号失真比</strong>
-       <p>含义: 衡量源信号的总失真程度，SDR 值越大，分离后的信号越接近原始信号，表示分离质量越好。</p></li>
+       <p><br>&nbsp;&nbsp;&nbsp;&nbsp;含义: 衡量源信号的总失真程度，SDR 值越大，分离后的信号越接近原始信号，表示分离质量越好。</p></li>
     <li><strong>SIR (Source-to-Interference Ratio) - 信号干扰比</strong>
-       <p>含义: 衡量目标源与干扰源的分离效果，SIR 值越大，说明对干扰源的抑制越好，如分离人声时器乐分离效果越好。</p></li>
+       <p><br>&nbsp;&nbsp;&nbsp;&nbsp;含义: 衡量目标源与干扰源的分离效果，SIR 值越大，说明对干扰源的抑制越好，如分离人声时器乐分离效果越好。</p></li>
     <li><strong>SAR (Source-to-Artifacts Ratio) - 信号伪影比</strong>
-       <p>含义: 衡量分离信号中由算法引入的伪影程度，SAR 值越大，说明算法引入的伪影越少，分离结果越好。</p></li>
+       <p><br>&nbsp;&nbsp;&nbsp;&nbsp;含义: 衡量分离信号中由算法引入的伪影程度，SAR 值越大，说明算法引入的伪影越少，分离结果越好。</p></li>
     </ol>
     """
 
@@ -167,9 +167,10 @@ with gr.Blocks() as demo:
     with gr.Row():
         with gr.Column(scale=1):
             gr.HTML(explain_bss_eval_sources_requirements())
+            gr.HTML("<br>")
 
         with gr.Column(scale=1):
-            gr.HTML("<hr>")  # 添加分隔线
+            gr.HTML("<hr>")
             gr.HTML(print_bss_eval_descriptions())
 
     gr.Markdown("### 请上传音频文件进行SDR评估")
@@ -190,4 +191,4 @@ with gr.Blocks() as demo:
     run_btn.click(fn=sdr_eval_ui, inputs=[ref_audio, est_audio], outputs=result_display)
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(inbrowser=True)
